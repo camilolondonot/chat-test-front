@@ -1,12 +1,89 @@
-# React + Vite
+# 🌟 Chatbot IA — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend de la aplicación tipo chatbot construido con React, Vite, TailwindCSS, Axios y Sass para el estilo. Conecta con el backend para enviar y recibir mensajes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** React  
+- **Build tool:** Vite  
+- **Estilos:** TailwindCSS + Sass  
+- **HTTP Client:** Axios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧪 Instalación
+
+### 1. Clonar el repositorio
+
+git clone https://github.com/camilolondonot/chat-test-front.git
+cd chat-test-front/chatApp
+
+
+### 2. Instalar dependencias
+npm install
+
+### 3. Ejecutar en desarrollo
+npm run dev
+
+### 4. 📁 Estructura del Proyecto
+```
+├── chatApp
+    ├── 📁public
+    |   └── vite.svg
+    └── 📁src
+        └── App.jsx
+        └── 📁assets
+            └── .DS_Store
+            └── 📁img
+                └── 📁brand
+                    └── eva_boot.webp
+                └── 📁vector
+                    └── info-icon.svg
+            └── react.svg
+        └── 📁components
+            └── 📁ChatMain
+                └── ChatMain.jsx
+                └── ChatMain.sass
+                └── 📁components
+                    └── 📁HeaderChat
+                        └── HeaderChat.jsx
+                    └── 📁LoadingTapping
+                        └── LoadingTapping.jsx
+                        └── LoadingTapping.sass
+                    └── 📁Message
+                        └── Message.jsx
+                    └── 📁TappingMessage
+                        └── TappingMessage.jsx
+            └── 📁Global
+                └── 📁Footer
+                    └── Footer.jsx
+                └── 📁Header
+                    └── Header.jsx
+                └── 📁LoadingDefault
+                    └── LoadingDefault.jsx
+        └── 📁layout
+            └── Layout.jsx
+        └── main.css
+        └── main.jsx
+        └── 📁services
+            └── index.js
+        └── 📁utils
+            └── setDate.js
+    └── .env
+    └── .gitignore
+    └── eslint.config.js
+    └── index.html
+    └── package-lock.json
+    └── package.json
+    └── postcss.config.js
+    └── README.md
+    └── tailwind.config.js
+    └── vite.config.js
+```
+
+
+👨‍💻 Autor
+Desarrollado por Milo desde Medellín, Colombia 🇨🇴
+GitHub: @camilolondonot
