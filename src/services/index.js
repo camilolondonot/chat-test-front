@@ -29,6 +29,18 @@ export const postRequest = async (endpoint, data) => {
   }
 };
 
+export const deleteRequest = async (endpoint) => {
+  try {
+    const response = await api.delete(endpoint);
+    return response.data;
+  } catch (error) {
+    console.error('❌ Error en DELETE:', error);
+    throw error;
+  }
+};
+
+export const resetChatMessages = () => deleteRequest('/messages');
+
 export const getMessages = () => getRequest('/messages');
 
 export const sendMessage = (content) => postRequest('/messages', { content });
