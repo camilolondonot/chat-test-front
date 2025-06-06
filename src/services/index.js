@@ -39,7 +39,7 @@ export const deleteRequest = async (endpoint) => {
   }
 };
 
-export const resetChatMessages = () => deleteRequest('/messages');
+export const resetChatMessages = () => deleteRequest('/messages/reset');
 
 export const getMessages = () => getRequest('/messages');
 
