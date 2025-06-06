@@ -140,11 +140,13 @@ const ChatMain = () => {
           ) : (
             <>
               {!isLoadingChat && groupedMessages.length === 0 && (
-                <div className=" justify-center items-center h-full pointer-events-none">
-                  <div className="text-gray-400 dark:text-gray-300 text-sm text-center">
-                    No hay mensajes todavía... 
+                <div className=" justify-center flex items-center h-full pointer-events-none">
+                  <div>
+                    <div className="text-gray-400 dark:text-gray-300 text-sm text-center">
+                      No hay mensajes todavía... 
+                    </div>
+                    <div className='text-xl text-center font-bold text-slate-600 dark:text-slate-800'>¿por qué no escribís algo? 😄</div>
                   </div>
-                  <div className='text-xl text-center font-bold text-slate-600 dark:text-slate-800'>¿por qué no escribís algo? 😄</div>
                 </div>
               )}
 
