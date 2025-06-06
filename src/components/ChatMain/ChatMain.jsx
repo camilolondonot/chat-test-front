@@ -57,6 +57,7 @@ const ChatMain = () => {
     try {
       await resetChatMessages(); 
       setMessages([]); 
+      fetchMessages();
     } catch (error) {
       console.error('Error al resetear el chat:', error);
     } finally {
@@ -138,6 +139,15 @@ const ChatMain = () => {
             <LoadingDefault />
           ) : (
             <>
+              {!isLoadingChat && groupedMessages.length === 0 && (
+                <div className=" justify-center items-center h-full pointer-events-none">
+                  <div className="text-gray-400 dark:text-gray-300 text-sm text-center">
+                    No hay mensajes todavía... 
+                  </div>
+                  <div className='text-xl text-center font-bold text-slate-600 dark:text-slate-800'>¿por qué no escribís algo? 😄</div>
+                </div>
+              )}
+
               {groupedMessages.map((item, index) => {
                 if (item.type === 'separator') {
                   return (
